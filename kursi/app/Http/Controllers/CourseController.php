@@ -27,5 +27,7 @@ class CourseController extends Controller
         ]);
 
         Course::create($validatedData);
+
+        return response()->json($course, 201);
     }
 }
